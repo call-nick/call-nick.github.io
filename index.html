@@ -1,2 +1,182 @@
-<h1>Никитос дарова</h1>
-<h2>Дарова Никитос</h2>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO-метатеги -->
+    <title>Пекарня callnick | Свежая выпечка в Минске - Натуральные ингредиенты</title>
+    <meta name="description" content="Натуральная выпечка в Минске от пекарни callnick. Французские круассаны, хлеб на закваске, экологичные продукты. Ежедневно свежие изделия с 7:00 до 21:00. Заказывайте онлайн!">
+    <meta name="keywords" content="свежая выпечка Минск, пекарня натуральные продукты, хлеб без консервантов, заказать выпечку Минск">
+    <link rel="canonical" href="https://callnick.by/minsk-fresh-bakery">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Пекарня callnick | Натуральная выпечка в Минске">
+    <meta property="og:description" content="Свежий хлеб и выпечка из экологичных ингредиентов. Ежедневное производство, традиционные рецепты. Заказывайте онлайн!">
+    <meta property="og:url" content="https://callnick.by/minsk-fresh-bakery">
+    <meta property="og:image" content="https://callnick.by/og-image.webp">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "callnick Пекарня",
+        "image": "https://callnick.by/bread-bg.webp",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Хлебозаводская 15",
+            "addressLocality": "Минск",
+            "postalCode": "220000"
+        },
+        "telephone": "+375171234567",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "07:00",
+            "closes": "21:00"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "150"
+        }
+    }
+    </script>
+
+    <style>
+        /* Стили для мобильного меню и адаптации */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #4a2c2a; }
+        header { position: sticky; top: 0; background: #fff; z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 15px; }
+        .logo { font-size: 24px; color: #d4a373; text-decoration: none; }
+        .nav-menu { display: flex; gap: 25px; }
+        .nav-link { color: #4a2c2a; text-decoration: none; font-weight: bold; }
+        .mobile-menu { display: none; position: absolute; top: 60px; left: 0; width: 100%; background: #fff; padding: 20px; }
+        .menu-toggle { display: none; cursor: pointer; padding: 10px; }
+        .hero { height: 70vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('bread-bg.webp') center/cover; display: flex; align-items: center; }
+        .cta-btn { background: #d4a373; color: #fff; padding: 12px 30px; border-radius: 25px; text-decoration: none; }
+        .grid { display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+        .card { padding: 20px; border-radius: 10px; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .review-section { background: #f8f4f2; padding: 40px 0; }
+        .review-card { background: #fff; padding: 20px; border-radius: 10px; position: relative; }
+        .review-rating { position: absolute; top: -15px; right: 20px; background: #d4a373; color: #fff; padding: 5px 10px; border-radius: 5px; }
+        footer { background: #4a2c2a; color: #fff; padding: 40px 0; }
+        .contact-info { margin: 20px 0; }
+        .contact-info a { color: #d4a373; text-decoration: none; }
+        @media (max-width: 768px) {
+            .nav-menu { display: none; }
+            .menu-toggle { display: block; }
+            .mobile-menu.active { display: flex; flex-direction: column; }
+            .hero { height: 50vh; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container container">
+            <a href="/" class="logo">callnick Пекарня</a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#menu" class="nav-link">Меню</a>
+                <a href="#production" class="nav-link">Производство</a>
+                <a href="#reviews" class="nav-link">Отзывы</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+                <a href="order.html" class="cta-btn">Заказать</a>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#menu">Меню</a>
+            <a href="#production">Производство</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="order.html" class="cta-btn">Заказать</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="h1">Свежая выпечка из натуральных ингредиентов</h1>
+                <a href="#menu" class="cta-btn">Выбрать продукцию</a>
+            </div>
+        </section>
+
+        <section class="section container" id="features">
+            <h2 class="h2">Почему выбирают нас</h2>
+            <div class="grid">
+                <article class="card">
+                    <img src="organic-wheat.jpg" alt="Натуральная пшеница" loading="lazy" width="300" height="200">
+                    <h3>Экологичные ингредиенты</h3>
+                    <p>Мука высшего сорта, натуральные закваски, без ГМО и консервантов</p>
+                </article>
+                <article class="card">
+                    <img src="fresh-bread.jpg" alt="Свежий хлеб" loading="lazy" width="300" height="200">
+                    <h3>Ежедневная свежесть</h3>
+                    <p>Новая партия каждые 4 часа с 5:00 утра</p>
+                </article>
+                <article class="card">
+                    <img src="organic-wheat.jpg" alt="Доставка" loading="lazy" width="300" height="200">
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставим ваш заказ по Минску в течение 1 часа</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container" id="production">
+            <h2 class="h2">Наше производство</h2>
+            <div class="grid">
+                <div>
+                    <h3>Традиционные рецепты</h3>
+                    <p>Соблюдаем рецептуры 19 века с использованием современного оборудования</p>
+                    <img src="baking-process.webp" alt="Процесс выпечки" loading="lazy" width="600" height="400">
+                </div>
+                <div>
+                    <h3>Контроль качества</h3>
+                    <p>Пятиступенчатая проверка: от отбора зерна до упаковки</p>
+                    <img src="quality-control.jpg" alt="Проверка качества" loading="lazy" width="600" height="400">
+                </div>
+            </div>
+        </section>
+
+        <section class="review-section" id="reviews">
+            <div class="container">
+                <h2 class="h2">Отзывы клиентов</h2>
+                <div class="grid">
+                    <div class="review-card">
+                        <div class="review-rating">★★★★★</div>
+                        <p>"Лучший хлеб в Минске! Покупаем только здесь уже 3 года"</p>
+                        <cite>— Анна Иванова</cite>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-rating">★★★★☆</div>
+                        <p>"Вкусные круассаны, но иногда бывает очередь"</p>
+                        <cite>— Дмитрий Петров</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Пекарня callnick</p>
+            <div class="contact-info">
+                <p>ул. Хлебозаводская 15, Минск</p>
+                <a href="tel:+375171234567">+375 (17) 123-45-67</a>
+                <p>Ежедневно 7:00-21:00</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

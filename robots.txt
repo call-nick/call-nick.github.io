@@ -1,0 +1,9 @@
+User-agent: Yandex
+
+Disallow: /download
+Sitemap: https://call-nick.github.io/seo/sitemap.html
+
+User-agent: *
+
+Disallow: /catalog
+Sitemap: https://call-nick.github.io/seo/sitemap.html
